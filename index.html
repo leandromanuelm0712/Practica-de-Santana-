@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leandro Melenciano | Desarrollador de Software React</title>
+
+  
+  <meta name="description" content="Portafolio de Leandro Melenciano, Desarrollador de Software con más de 5 años de experiencia especializado en React, HTML5, CSS3 y JavaScript. Historial de proyectos, trabajo en equipo y contacto.">
+  <meta name="keywords" content="Leandro Melenciano, desarrollador de software, frontend developer, React, JavaScript, HTML5, CSS3, portafolio, Republica Dominicana">
+  <meta name="author" content="Leandro Melenciano">
+
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+ 
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+  <nav class="navbar navbar-expand-lg bg-primary fixed-top" data-bs-theme="light" aria-label="Barra de navegación principal">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-white" href="#inicio">
+        <i class="fas fa-code me-2" aria-hidden="true"></i>LM
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link text-white" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#sobre-mi">Sobre Mí</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#desarrollo">Desarrollo de Software</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#proyectos">Mis Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#historial">Historial</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#equipo">Trabajo en Equipo</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#experiencia">Experiencia</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#contacto">Contacto</a></li>
+          <li class="nav-item ms-lg-3">
+            <button id="darkModeToggle" class="btn btn-outline-light" type="button"
+                    aria-label="Alternar modo oscuro" title="Alternar modo oscuro">
+              <i class="fas fa-moon" id="darkModeIcon" aria-hidden="true"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+ 
+  <header id="inicio" class="hero-section d-flex align-items-center justify-content-center text-white" role="banner">
+    <div class="container text-center">
+      <img src="https://i.postimg.cc/wvN0RGNP/Curriculum-Vitae-Cv-de-Administracion-Simple-Azul-removebg-preview.jpg"
+           alt="Retrato de Leandro Melenciano, desarrollador de software"
+           class="hero-avatar rounded-circle img-fluid mb-4" width="220" height="220">
+      <h1 class="display-3 fw-bold hero-title">Leandro Melenciano</h1>
+      <p class="lead hero-subtitle">
+        Desarrollador de Software con <strong>más de 5 años de experiencia</strong>.
+        Especializado en <strong>React</strong> y <strong>JavaScript</strong>.
+        Construyo aplicaciones web rápidas, mantenibles y centradas en el usuario 🛸
+      </p>
+      <div class="d-flex justify-content-center gap-3 flex-wrap mt-3">
+        <a href="#proyectos" class="btn btn-light btn-lg">
+          <i class="fas fa-rocket me-2" aria-hidden="true"></i>Ver mis proyectos
+        </a>
+        <a href="#contacto" class="btn btn-outline-light btn-lg">
+          <i class="fas fa-envelope me-2" aria-hidden="true"></i>Contáctame
+        </a>
+      </div>
+      
+      <div class="row justify-content-center mt-5">
+        <div class="col-6 col-md-3">
+          <h3 class="fw-bold mb-0">5+</h3>
+          <p class="mb-0">Años de experiencia</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h3 class="fw-bold mb-0">30+</h3>
+          <p class="mb-0">Proyectos entregados</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h3 class="fw-bold mb-0">15+</h3>
+          <p class="mb-0">Clientes y empresas</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h3 class="fw-bold mb-0">98%</h3>
+          <p class="mb-0">Lighthouse promedio</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="sobre-mi" class="py-5" aria-label="Sección Sobre mí">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="display-5 fw-bold mb-4">
+              <i class="fas fa-user me-2 text-primary" aria-hidden="true"></i>Sobre Mí
+            </h2>
+            <p class="lead">
+              Soy Leandro Melenciano, desarrollador de software dominicano con más de 5 años
+              construyendo productos digitales. Comencé maquetando sitios con HTML y CSS y hoy
+              lidero el desarrollo de aplicaciones frontend en React para empresas de tecnología
+              y comercio. Me especializo en arquitectura de componentes, optimización de
+              rendimiento y accesibilidad web . Disfruto convertir problemas complejos en
+              soluciones simples, escribir código limpio y documentado, y mentorizar a
+              desarrolladores que inician su carrera. Fuera del código, me apasionan la música,
+              el café y aprender tecnologías nuevas cada año.
+            </p>
+          </div>
+        </div>
+      
+        <div class="row justify-content-center mt-4">
+          <div class="col-lg-8">
+            <h5 class="text-center mb-3">Stack principal</h5>
+            <div class="d-flex justify-content-center flex-wrap gap-2">
+              <span class="badge stack-badge">React</span>
+              <span class="badge stack-badge">JavaScript (ES6+)</span>
+              <span class="badge stack-badge">HTML5</span>
+              <span class="badge stack-badge">CSS3</span>
+              <span class="badge stack-badge">Bootstrap 5</span>
+              <span class="badge stack-badge">Git / GitHub</span>
+              <span class="badge stack-badge">REST APIs</span>
+              <span class="badge stack-badge">Redux</span>
+              <span class="badge stack-badge">Vite</span>
+              <span class="badge stack-badge">Jest</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+    <section id="desarrollo" class="py-5 bg-light" aria-label="Sección Desarrollo de Software">
+      <div class="container">
+        <h2 class="text-center display-5 fw-bold mb-5">
+          <i class="fas fa-laptop-code me-2 text-primary" aria-hidden="true"></i>Desarrollo de Software
+        </h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <article class="card h-100 text-center p-3">
+              <i class="fas fa-cubes fa-3x text-primary mb-3" aria-hidden="true"></i>
+              <h5>Arquitectura de Componentes</h5>
+              <p>
+                Diseño sistemas de componentes reutilizables y librerías internas con React,
+                aplicando patrones como contenedores/presentacionales, hooks personalizados y
+                atomic design para escalar aplicaciones sin duplicar código.
+              </p>
+            </article>
+          </div>
+          <div class="col-md-4 mb-4">
+            <article class="card h-100 text-center p-3">
+              <i class="fas fa-gauge-high fa-3x text-primary mb-3" aria-hidden="true"></i>
+              <h5>Rendimiento y Optimización</h5>
+              <p>
+                Code splitting con lazy loading, memoización, optimización de imágenes y
+                análisis con Lighthouse y Web Vitals. He reducido tiempos de carga hasta un
+                45% en aplicaciones en producción.
+              </p>
+            </article>
+          </div>
+          <div class="col-md-4 mb-4">
+            <article class="card h-100 text-center p-3">
+              <i class="fas fa-universal-access fa-3x text-primary mb-3" aria-hidden="true"></i>
+              <h5>Accesibilidad y Calidad</h5>
+              <p>
+                HTML semántico, atributos ARIA, contraste y navegación por teclado. Pruebas
+                unitarias con Jest y revisión de código en pull requests para mantener
+                estándares de calidad en todo el equipo.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="proyectos" class="py-5" aria-label="Sección Mis Proyectos">
+      <div class="container">
+        <h2 class="text-center display-5 fw-bold mb-5">
+          <i class="fas fa-project-diagram me-2 text-primary" aria-hidden="true"></i>Mis Proyectos
+        </h2>
+
+ 
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-8">
+            <div id="carrusel" class="carrusel" aria-label="Carrusel de imágenes de proyectos" role="region">
+              <img id="carruselImagen" class="carrusel-imagen" src=""
+                   alt="" aria-live="polite">
+              <button class="carrusel-btn carrusel-prev" id="carruselPrev" type="button"
+                      aria-label="Imagen anterior">
+                <i class="fas fa-chevron-left" aria-hidden="true"></i>
+              </button>
+              <button class="carrusel-btn carrusel-next" id="carruselNext" type="button"
+                      aria-label="Imagen siguiente">
+                <i class="fas fa-chevron-right" aria-hidden="true"></i>
+              </button>
+              <div class="carrusel-pie" id="carruselPie"></div>
+              <div class="carrusel-puntos" id="carruselPuntos" role="tablist" aria-label="Seleccionar imagen"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <article class="card project-card h-100">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvz5s6cIQdBoZVV3Wj_P1s-H3cS7BxDNGwwRNrMNxa5g&s=10"
+                   class="card-img-top" alt="E-commerce: tienda online de productos">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">NovaShop E-commerce 🛒</h5>
+                <p class="card-text">
+                  Tienda online con carrito, pasarela de pago y panel de administración.
+                  React, Redux Toolkit, Bootstrap 5 y API REST. +12,000 usuarios activos.
+                </p>
+                <a href="#" class="btn btn-primary mt-auto">Ver Proyecto</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4 mb-4">
+            <article class="card project-card h-100">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThM-MPG-7ywXXW6XbwRC1sizjghK_4BC4BfvGoMO4sXQ&s=10"
+                   class="card-img-top" alt="Dashboard: panel de control de métricas">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">InsightBoard Dashboard 📊</h5>
+                <p class="card-text">
+                  Panel de análisis en tiempo real con gráficas interactivas y reportes
+                  exportables. React, Chart.js, WebSockets y CSS Grid.
+                </p>
+                <a href="#" class="btn btn-primary mt-auto">Ver Proyecto</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4 mb-4">
+            <article class="card project-card h-100">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkyzyA9mNHOTpePkocibHy3tFzepNRWnH4uGw2BmJiIQ&s"
+                   class="card-img-top" alt="App Móvil: aplicación de tareas">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">TaskFlow PWA 📱</h5>
+                <p class="card-text">
+                  Aplicación progresiva de gestión de tareas con modo offline, notificaciones
+                  push e instalable en móvil. React, Service Workers y LocalStorage.
+                </p>
+                <a href="#" class="btn btn-primary mt-auto">Ver Proyecto</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== HISTORIAL DE PROYECTOS ==================== -->
+    <section id="historial" class="py-5 bg-light" aria-label="Sección Historial de Proyectos">
+      <div class="container">
+        <h2 class="text-center display-5 fw-bold mb-5">
+          <i class="fas fa-clock-rotate-left me-2 text-primary" aria-hidden="true"></i>Historial de Proyectos
+        </h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-year">2025</span>
+            <article class="card timeline-card">
+              <div class="card-body">
+                <h5 class="card-title">BancaDigital Mobile Web 🏦</h5>
+                <p class="card-text">
+                  Rediseño del portal móvil de un banco: autenticación con OTP, transferencias
+                  y resumen de cuentas. React + TypeScript, carga 40% más rápida.
+                </p>
+                <span class="badge bg-primary">React</span>
+                <span class="badge bg-secondary">TypeScript</span>
+                <span class="badge bg-secondary">Seguridad</span>
+              </div>
+            </article>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-year">2024</span>
+            <article class="card timeline-card">
+              <div class="card-body">
+                <h5 class="card-title">MediSalud Citas Médicas 🏥</h5>
+                <p class="card-text">
+                  Sistema de reservas de citas con calendario interactivo, recordatorios por
+                  correo y panel para médicos. Redujo las citas perdidas un 30%.
+                </p>
+                <span class="badge bg-primary">React</span>
+                <span class="badge bg-secondary">FullCalendar</span>
+                <span class="badge bg-secondary">Node.js</span>
+              </div>
+            </article>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-year">2023</span>
+            <article class="card timeline-card">
+              <div class="card-body">
+                <h5 class="card-title">LogiTrack Gestión de Flota 🚚</h5>
+                <p class="card-text">
+                  Seguimiento de vehículos en mapa en tiempo real con alertas de mantenimiento.
+                  React, Leaflet y WebSockets para 200+ unidades monitoreadas.
+                </p>
+                <span class="badge bg-primary">React</span>
+                <span class="badge bg-secondary">Leaflet</span>
+                <span class="badge bg-secondary">WebSockets</span>
+              </div>
+            </article>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-year">2022</span>
+            <article class="card timeline-card">
+              <div class="card-body">
+                <h5 class="card-title">EduCampus Aula Virtual 🎓</h5>
+                <p class="card-text">
+                  Plataforma de cursos con reproductor de video, quizzes y seguimiento de
+                  progreso. Usada por más de 5,000 estudiantes en su primer año.
+                </p>
+                <span class="badge bg-primary">React</span>
+                <span class="badge bg-secondary">Redux</span>
+                <span class="badge bg-secondary">PWA</span>
+              </div>
+            </article>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-year">2021</span>
+            <article class="card timeline-card">
+              <div class="card-body">
+                <h5 class="card-title">FerreMaster Catálogo Web 🔧</h5>
+                <p class="card-text">
+                  Catálogo con buscador de más de 3,000 productos, filtros por categoría y
+                  cotizador en línea. Primer proyecto React en producción.
+                </p>
+                <span class="badge bg-primary">React</span>
+                <span class="badge bg-secondary">Firebase</span>
+                <span class="badge bg-secondary">SEO</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TRABAJO EN EQUIPO ==================== -->
+    <section id="equipo" class="py-5" aria-label="Sección Trabajo en Equipo">
+      <div class="container">
+        <h2 class="text-center display-5 fw-bold mb-5">
+          <i class="fas fa-users me-2 text-primary" aria-hidden="true"></i>Trabajo en Equipo
+        </h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="text-center mb-3">
+              <i class="fas fa-people-arrows fa-3x text-primary" aria-hidden="true"></i>
+            </div>
+            <h5 class="text-center">Colaboración Ágil</h5>
+            <p class="text-center">
+              Experiencia en equipos multidisciplinarios con Scrum: dailies, sprints de dos
+              semanas, retrospectivas y estimación con Planning Poker junto a diseño UX/UI,
+              backend y QA.
+            </p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="text-center mb-3">
+              <i class="fas fa-code-branch fa-3x text-primary" aria-hidden="true"></i>
+            </div>
+            <h5 class="text-center">Git y Code Review</h5>
+            <p class="text-center">
+              Flujos con Git Flow, pull requests obligatorios, revisiones cruzadas y
+              convenciones de commits. Uso de GitHub Actions para integración continua.
+            </p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="text-center mb-3">
+              <i class="fas fa-graduation-cap fa-3x text-primary" aria-hidden="true"></i>
+            </div>
+            <h5 class="text-center">Mentoría y Liderazgo</h5>
+            <p class="text-center">
+              Mentor de 5 desarrolladores junior: sesiones semanales de pair programming,
+              documentación interna y charlas técnicas. Lideré el frontend de 3 proyectos
+              grandes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCIA ==================== -->
+    <section id="experiencia" class="py-5 bg-light" aria-label="Sección Experiencia">
+      <div class="container">
+        <h2 class="text-center display-5 fw-bold mb-5">
+          <i class="fas fa-briefcase me-2 text-primary" aria-hidden="true"></i>Experiencia
+        </h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <article class="card experience-card h-100 border-primary">
+              <div class="card-body text-center">
+                <i class="fas fa-building fa-3x text-primary mb-3" aria-hidden="true"></i>
+                <h5 class="card-title">Senior Frontend Developer - TechNova RD</h5>
+                <p class="card-text">
+                  🗓️ 2022 - Actualidad<br>
+                  Liderazgo técnico del equipo frontend, arquitectura React y mejora del
+                  Lighthouse Score de 62 a 98. Mentoría de 5 desarrolladores.
+                </p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4 mb-4">
+            <article class="card experience-card h-100 border-primary">
+              <div class="card-body text-center">
+                <i class="fas fa-building fa-3x text-primary mb-3" aria-hidden="true"></i>
+                <h5 class="card-title">Frontend Developer - CaribeSoft</h5>
+                <p class="card-text">
+                  🗓️ 2020 - 2022<br>
+                  Desarrollo de 12 aplicaciones web con React, HTML5, CSS3 y JavaScript.
+                  Reducción del tiempo de carga en 45% mediante lazy loading.
+                </p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4 mb-4">
+            <article class="card experience-card h-100 border-primary">
+              <div class="card-body text-center">
+                <i class="fas fa-building fa-3x text-primary mb-3" aria-hidden="true"></i>
+                <h5 class="card-title">Junior Web Developer - PixelWorks Studio</h5>
+                <p class="card-text">
+                  🗓️ 2019 - 2020<br>
+                  Maquetación responsive de sitios corporativos con Bootstrap y JavaScript
+                  vanilla. Primeros componentes React en producción.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACTO ==================== -->
+    <section id="contacto" class="py-5" aria-label="Sección de contacto">
+      <div class="container">
+        <h2 class="text-center display-5 fw-bold mb-5">
+          <i class="fas fa-envelope me-2 text-primary" aria-hidden="true"></i>Contacto
+        </h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <form id="contactForm" novalidate>
+              <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="name" name="name"
+                       placeholder="Tu nombre completo" required aria-required="true">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="email" name="email"
+                       placeholder="tucorreo@ejemplo.com" required aria-required="true">
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="message" name="message" rows="5"
+                          placeholder="Escríbeme tu mensaje..." required aria-required="true"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">
+                <i class="fas fa-paper-plane me-2" aria-hidden="true"></i>Enviar mensaje
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col text-center">
+            <h5 class="mb-4">Conéctate en Redes</h5>
+            <div class="d-flex justify-content-center gap-4">
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener"
+                 class="social-link" aria-label="Perfil de LinkedIn de Leandro Melenciano">
+                <i class="fab fa-linkedin fa-2x text-primary" aria-hidden="true"></i>
+              </a>
+              <a href="https://github.com/" target="_blank" rel="noopener"
+                 class="social-link" aria-label="Perfil de GitHub de Leandro Melenciano">
+                <i class="fab fa-github fa-2x text-dark github-icon" aria-hidden="true"></i>
+              </a>
+              <a href="https://twitter.com/" target="_blank" rel="noopener"
+                 class="social-link" aria-label="Perfil de Twitter de Leandro Melenciano">
+                <i class="fab fa-twitter fa-2x text-info" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                 class="social-link" aria-label="Perfil de Instagram de Leandro Melenciano">
+                <i class="fab fa-instagram fa-2x text-danger" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-dark text-white py-4" role="contentinfo">
+    <div class="container text-center">
+      <p class="mb-0">
+        © 2025 Leandro Melenciano.
+        <i class="fas fa-heart text-danger" aria-hidden="true"></i>
+        
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK21eN7DcX3uSg"
+          crossorigin="anonymous"></script>
+  <!-- Script propio -->
+  <script src="script.js"></script>
+</body>
+</html>
